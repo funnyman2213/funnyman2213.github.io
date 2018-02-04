@@ -21,12 +21,20 @@ function calculate() {
     try {
         // multiply by Math.PI/180 to convert to radians
         if (Math.abs(cye-cyf)>180) {
-            ay = Math.abs(cye-cyf)-90;
+            if(cye>cyf){
+                ay=360-cye+cyf;
+            } else {
+                ay=360-cyf+cye;
+            }
         } else {
             ay = Math.abs(cye-cyf);
         }
         if (Math.abs(cfe-cfy)>180) {
-            af = Math.abs(cfe-cfy)-90;
+            if(cfe>cfy){
+                ay=360-cfe+cfy;
+            } else {
+                ay=360-cfy+cfe;
+            }
         } else {
             af = Math.abs(cfe-cfy);
         }
