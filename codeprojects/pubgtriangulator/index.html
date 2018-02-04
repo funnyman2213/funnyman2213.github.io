@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Info -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+
+    <!-- Page Title -->
     <title>PUBG triangulator</title>
+
+    <!-- Main JS Script -->
+    <script src="main.js" charset="utf-8"></script>
 </head>
 <body>
-    <h3>PAGE UNDER CONSTRUCTION</h3>
-    <p>nothing here yet</p>
+    <p>Degrees form you to the enemy: </p>
+    <input type="number" id="cye">
+    <p>Degrees from friend to enemy: </p>
+    <input type="number" id="cfe">
+    <p>Degrees from you to your friend: </p>
+    <input type="numebr" id="cyf">
+    <button type="button" onclick="calculate()">Submit</button>
+    <div id="output"></div>
 </body>
 </html>
