@@ -10,7 +10,7 @@ function calculate() {
 
     /* set value of co-ordinate(friend, you) to the
        inverse of co-ordinate(you, friend) */
-    if (cyf+180 > 360) {
+    if (cyf+180 >= 360) {
         cfy = cyf-180;
     } else {
         cfy = cyf+180;
